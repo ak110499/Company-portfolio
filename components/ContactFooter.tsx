@@ -54,7 +54,7 @@ const ContactFooter: React.FC = () => {
               </span>
             </div>
             <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-md">
-              Established in 2000. Forging lasting partnerships with a self-owned fleet of 75 GPS-enabled vehicles and two decades of logistical expertise.
+              Established in 2000. Forging lasting partnerships with a self-owned fleet of 85 GPS-enabled vehicles and over two decades of logistical expertise.
             </p>
             
             <address className="space-y-6 not-italic">
