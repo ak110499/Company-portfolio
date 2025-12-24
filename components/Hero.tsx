@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
@@ -98,14 +98,14 @@ const Hero: React.FC = () => {
         </h1>
         
         <p className="mt-4 max-w-3xl mx-auto text-xl text-slate-600 dark:text-slate-400 transition-colors leading-relaxed">
-          India's trusted leader in logistics serving <strong className="text-slate-900 dark:text-white font-bold">Leading Global Brands</strong>. Operating a fleet of 75+ GPS-enabled vehicles with a customer-centric philosophy.
+          India's trusted leader in logistics serving <strong className="text-slate-900 dark:text-white font-bold">Leading Global Brands</strong>. Operating a fleet of 85+ GPS-enabled vehicles with a customer-centric philosophy.
         </p>
         
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a 
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className="group relative inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white dark:text-slate-950 bg-cyan-600 dark:bg-cyan-400 rounded-full overflow-hidden transition-all duration-300 hover:bg-cyan-500 dark:hover:bg-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="group relative inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white dark:text-slate-950 bg-cyan-600 dark:bg-cyan-400 rounded-full overflow-hidden transition-all duration-300 hover:bg-cyan-50 dark:hover:bg-cyan-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-cyan-400"
           >
             <span className="relative z-10 flex items-center">
               Request Consultation
