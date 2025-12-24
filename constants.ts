@@ -15,7 +15,7 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { label: "Fleet Strength", value: 75, suffix: "+", description: "GPS-Enabled Vehicles" },
+  { label: "Fleet Strength", value: 85, suffix: "+", description: "GPS-Enabled Vehicles" },
   { label: "Expert Workforce", value: 100, suffix: "+", description: "Logistics Professionals" },
   { label: "Experience", value: new Date().getFullYear() - ESTABLISHED_YEAR, suffix: "+", description: "Years in Industry" },
   { label: "Client Satisfaction", value: 100, suffix: "%", description: "Commitment to Excellence" },
@@ -33,7 +33,7 @@ export const CLIENTS: Client[] = [
 export const SERVICES: ServiceItem[] = [
   {
     title: "Road Transportation",
-    description: "Inbound and outbound cargo services with a fleet of 75 GPS-enabled vehicles ranging from 14 to 34 feet.",
+    description: "Inbound and outbound cargo services with a modern fleet of 85 GPS-enabled vehicles ranging from 14 to 34 feet.",
     icon: "truck"
   },
   {
@@ -77,7 +77,7 @@ export const MILESTONES: Milestone[] = [
   {
     year: "2024",
     title: "Future Ready",
-    description: "Operating with 75+ modern vehicles and a dedicated team of 100+ professionals."
+    description: "Operating with 85+ modern vehicles and a dedicated team of 100+ professionals."
   }
 ];
 
@@ -120,7 +120,7 @@ Key Company Information:
 - Administrative Office: 1098/7 Jain Bagh Colony Near Jemini Hospital Kakroi Chowk Sonipat, 131001.
 - Core Business: Road Transportation, Cargo Handling, Warehousing, and Custom Solutions.
 - Operational Regions: Haryana, Punjab, Uttar Pradesh, Rajasthan (and across India).
-- Fleet: 75 GPS-enabled vehicles (14 to 34 feet).
+- Fleet: 85 GPS-enabled vehicles (14 to 34 feet).
 - Key Clients: PepsiCo (Kapoor F&C), Haier Appliances, Blue Star, INDKAL Technologies, SS Supply Chain Solutions, Reliance (BPL & Kelvinator).
 - GST Number: 06EXQPK4096H1ZW.
 

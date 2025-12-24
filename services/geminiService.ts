@@ -1,3 +1,4 @@
+
 import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 import { SYSTEM_INSTRUCTION } from "../constants";
 
@@ -6,8 +7,7 @@ let chatSession: Chat | null = null;
 const getAiInstance = (): GoogleGenAI => {
   const apiKey = process.env.API_KEY;
   if (!apiKey) {
-    console.error("API_KEY is missing from environment variables.");
-    throw new Error("API Key not found");
+    throw new Error("API Key not found. Please ensure process.env.API_KEY is configured.");
   }
   return new GoogleGenAI({ apiKey });
 };
@@ -18,11 +18,10 @@ export const initializeChat = (): Chat => {
   try {
     const ai = getAiInstance();
     chatSession = ai.chats.create({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
         temperature: 0.7,
-        maxOutputTokens: 500,
       },
     });
     return chatSession;
@@ -40,9 +39,9 @@ export const sendMessageToGemini = async (message: string): Promise<string> => {
     if (response.text) {
       return response.text;
     }
-    return "I received the data but could not generate a text response.";
+    return "I am processing your request but cannot generate a text response right now.";
   } catch (error) {
     console.error("Error sending message to Gemini:", error);
-    return "Connection error. Please ensure your API key is valid.";
+    return "I encountered a connection error. Please try again or contact our support directly.";
   }
 };

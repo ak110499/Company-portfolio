@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { NAV_ITEMS } from '../constants';
 import { Menu, X, Truck, Moon, Sun } from 'lucide-react';
@@ -45,7 +46,7 @@ const Navbar: React.FC = () => {
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
